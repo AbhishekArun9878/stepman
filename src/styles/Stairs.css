@@ -1,0 +1,74 @@
+body{
+  background: linear-gradient(rgba(5, 60, 87, 0.849), rgb(83, 239, 205)), url(../components/background.jpeg);
+  background-size: cover; 
+}
+.stairs-container {
+    margin-top: 200px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  
+  .step {
+    width: 170px; 
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ccc;
+    margin-right: 20px; 
+    position: relative;
+  }
+  
+  .step-1 {
+    transform: translateY(0);
+  }
+  
+  .step-2 {
+    transform: translateY(-40px);
+  }
+  
+  .step-3 {
+    transform: translateY(-80px);
+  }
+  
+  .step-4 {
+    transform: translateY(-120px);
+  }
+  
+  .step-5 {
+    transform: translateY(-160px);
+  }
+  
+  .step-6 {
+    transform: translateY(-200px);
+  }
+  
+  .step-7 {
+    transform: translateY(-240px);
+  }
+  
+  .character::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .passed {
+    background-color: rgb(15, 151, 83);
+  }
+
+  .failed {
+  background-color: red;
+}
+
+.points{
+  color: aliceblue;
+  font-size: 1.6rem;
+}
+
+.task{
+  color: aliceblue;
+  font-size: 1.6rem;
+}
